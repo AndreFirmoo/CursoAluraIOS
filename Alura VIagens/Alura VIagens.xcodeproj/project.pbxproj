@@ -17,6 +17,7 @@
 		289285D32596C8CD00F93383 /* Alura_VIagensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289285D22596C8CD00F93383 /* Alura_VIagensUITests.swift */; };
 		289285E42596D14000F93383 /* Viagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289285E32596D14000F93383 /* Viagens.swift */; };
 		289285F92596D36800F93383 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289285F82596D36800F93383 /* ViagemDAO.swift */; };
+		289285FE2596D73300F93383 /* ViagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289285FD2596D73300F93383 /* ViagemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		289285D42596C8CD00F93383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		289285E32596D14000F93383 /* Viagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagens.swift; sourceTree = "<group>"; };
 		289285F82596D36800F93383 /* ViagemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
+		289285FD2596D73300F93383 /* ViagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				289285BB2596C8CD00F93383 /* LaunchScreen.storyboard */,
 				289285BE2596C8CD00F93383 /* Info.plist */,
 				289285E32596D14000F93383 /* Viagens.swift */,
+				289285FD2596D73300F93383 /* ViagemTableViewCell.swift */,
 			);
 			path = "Alura VIagens";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				289285B52596C8CC00F93383 /* ViewController.swift in Sources */,
 				289285F92596D36800F93383 /* ViagemDAO.swift in Sources */,
+				289285FE2596D73300F93383 /* ViagemTableViewCell.swift in Sources */,
 				289285E42596D14000F93383 /* Viagens.swift in Sources */,
 				289285B12596C8CC00F93383 /* AppDelegate.swift in Sources */,
 				289285B32596C8CC00F93383 /* SceneDelegate.swift in Sources */,

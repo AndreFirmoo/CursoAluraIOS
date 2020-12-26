@@ -63,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="175" id="liP-MP-5Wx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="175" id="liP-MP-5Wx" customClass="ViagemTableViewCell" customModule="Alura_VIagens" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="liP-MP-5Wx" id="q9d-oF-2Xe">
@@ -97,6 +97,12 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ImagemViagem" destination="Txq-s7-dL6" id="aDe-eD-QRU"/>
+                                            <outlet property="QuantidadeDiasLB" destination="2nI-pw-UDd" id="Qu7-ak-P1i"/>
+                                            <outlet property="TituloLB" destination="Vee-Ie-Nlt" id="rEj-mZ-Hda"/>
+                                            <outlet property="precoLB" destination="eBz-lg-kjw" id="rcj-VA-vCP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
