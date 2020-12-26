@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         self.viewPacotes.layer.cornerRadius = 10
         self.viewHoteis.layer.cornerRadius = 10
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -29,9 +30,12 @@ extension ViewController: UITableViewDataSource{
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViagemTableViewCell
         let viagemAtual = listaViagens[indexPath.row]
-        cell.textLabel?.text = viagemAtual.titulo
+        cell.ImagemViagem.image = UIImage(named: viagemAtual.caminhoImagem)
+        cell.QuantidadeDiasLB.text = viagemAtual.quantidadeDeDias
+        cell.TituloLB.text = viagemAtual.titulo
+        cell.precoLB.text = viagemAtual.preco
         return cell
     }
 }
