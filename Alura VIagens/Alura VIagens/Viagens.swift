@@ -19,5 +19,4 @@ class Viagem: NSObject {
         self.preco = preco
         self.caminhoImagem = caminhoImagem
     }
-    
 }
