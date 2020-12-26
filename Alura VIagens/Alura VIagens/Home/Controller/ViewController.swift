@@ -33,6 +33,8 @@ extension ViewController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViagemTableViewCell
         let viagemAtual = listaViagens[indexPath.row]
         cell.ImagemViagem.image = UIImage(named: viagemAtual.caminhoImagem)
+        cell.ImagemViagem.layer.cornerRadius = 10
+        cell.ImagemViagem.layer.masksToBounds = true
         cell.QuantidadeDiasLB.text = viagemAtual.quantidadeDeDias
         cell.TituloLB.text = viagemAtual.titulo
         cell.precoLB.text = viagemAtual.preco
