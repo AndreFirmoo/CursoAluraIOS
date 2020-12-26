@@ -105,16 +105,15 @@
 		289285AF2596C8CC00F93383 /* Alura VIagens */ = {
 			isa = PBXGroup;
 			children = (
+				289286062596DE5400F93383 /* ViagemDAO */,
+				289286032596DE0E00F93383 /* Home */,
+				289286022596DE0100F93383 /* Model */,
 				289285B02596C8CC00F93383 /* AppDelegate.swift */,
 				289285B22596C8CC00F93383 /* SceneDelegate.swift */,
-				289285B42596C8CC00F93383 /* ViewController.swift */,
 				289285B62596C8CC00F93383 /* Main.storyboard */,
 				289285B92596C8CD00F93383 /* Assets.xcassets */,
-				289285F82596D36800F93383 /* ViagemDAO.swift */,
 				289285BB2596C8CD00F93383 /* LaunchScreen.storyboard */,
 				289285BE2596C8CD00F93383 /* Info.plist */,
-				289285E32596D14000F93383 /* Viagens.swift */,
-				289285FD2596D73300F93383 /* ViagemTableViewCell.swift */,
 			);
 			path = "Alura VIagens";
 			sourceTree = "<group>";
@@ -135,6 +134,47 @@
 				289285D42596C8CD00F93383 /* Info.plist */,
 			);
 			path = "Alura VIagensUITests";
+			sourceTree = "<group>";
+		};
+		289286022596DE0100F93383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				289285E32596D14000F93383 /* Viagens.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		289286032596DE0E00F93383 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				289286052596DE3000F93383 /* View */,
+				289286042596DE2600F93383 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		289286042596DE2600F93383 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				289285B42596C8CC00F93383 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		289286052596DE3000F93383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				289285FD2596D73300F93383 /* ViagemTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		289286062596DE5400F93383 /* ViagemDAO */ = {
+			isa = PBXGroup;
+			children = (
+				289285F82596D36800F93383 /* ViagemDAO.swift */,
+			);
+			path = ViagemDAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

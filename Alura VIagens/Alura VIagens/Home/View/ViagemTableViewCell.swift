@@ -13,4 +13,5 @@ class ViagemTableViewCell: UITableViewCell {
     @IBOutlet weak var QuantidadeDiasLB: UILabel!
     @IBOutlet weak var precoLB: UILabel!
     @IBOutlet weak var ImagemViagem: UIImageView!
+    
 }
