@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+@objcMembers
 class Viagem: NSObject {
     let titulo: String
     let quantidadeDeDias: String

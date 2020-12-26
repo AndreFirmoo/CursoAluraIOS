@@ -224,23 +224,21 @@
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SzY-R2-AIG">
-                                        <rect key="frame" x="0.0" y="38" width="290" height="30"/>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-H9-wmU">
+                                        <rect key="frame" x="0.0" y="38" width="290" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="wab-3M-EkJ"/>
+                                            <constraint firstAttribute="height" constant="35" id="81Y-sA-zg4"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    </searchBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Pacotes encontrados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-fY-wpB">
-                                        <rect key="frame" x="0.0" y="73" width="290" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="78" width="290" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bL7-H9-HVa">
-                                        <rect key="frame" x="0.0" y="101.5" width="290" height="417.5"/>
+                                        <rect key="frame" x="0.0" y="106.5" width="290" height="412.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M1j-pJ-qDx">
                                             <size key="itemSize" width="135" height="160"/>
@@ -336,6 +334,8 @@
                     <tabBarItem key="tabBarItem" title="Pacotes" image="folder" catalog="system" id="QQe-tc-X78"/>
                     <connections>
                         <outlet property="colecaoDePacotes" destination="bL7-H9-HVa" id="UQY-NZ-Ols"/>
+                        <outlet property="contadorDePacotes" destination="lVc-fY-wpB" id="eJF-Ga-Xa0"/>
+                        <outlet property="pesquisarViagem" destination="s4i-H9-wmU" id="ZC1-sm-nrI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PNj-dj-EdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

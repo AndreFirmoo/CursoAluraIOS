@@ -9,16 +9,39 @@ import UIKit
 
 class PacoteViagensViewController: UIViewController {
 
-    let listaViagens: Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
+    let listaComTodasViagens: Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
+    var listaViagens :Array<Viagem> = []
     
-    
+    @IBOutlet weak var contadorDePacotes: UILabel!
+    @IBOutlet weak var pesquisarViagem: UISearchBar!
     @IBOutlet weak var colecaoDePacotes: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        listaViagens = listaComTodasViagens
         colecaoDePacotes.dataSource = self
         colecaoDePacotes.delegate = self
+        pesquisarViagem.delegate = self
+        self.contadorDePacotes.text = self.atualizaContadorLabel()
+    }
+    
+    func atualizaContadorLabel() -> String{
+        return listaViagens.count == 1 ? "1 Pacote encontrado" : "\(listaViagens.count) Pacotes Encontrados"
     }
 }
+
+extension PacoteViagensViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        listaViagens = listaComTodasViagens
+        if searchText != "" {
+            let filtro = NSPredicate(format: "titulo contains %@", searchText)
+            let listaFiltro : Array<Viagem> = (listaViagens as NSArray).filtered(using: filtro) as! Array
+            listaViagens = listaFiltro
+        }
+        self.contadorDePacotes.text = self.atualizaContadorLabel()
+        colecaoDePacotes.reloadData()
+    }
+}
+
 extension PacoteViagensViewController : UICollectionViewDelegate{
     
 
