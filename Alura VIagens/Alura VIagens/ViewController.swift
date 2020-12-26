@@ -34,6 +34,10 @@ extension ViewController: UITableViewDataSource{
         cell.textLabel?.text = viagemAtual.titulo
         return cell
     }
-    
-    
+}
+
+extension ViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 175
+    }
 }
